@@ -3,14 +3,14 @@
     <head>
         <!-- meta tag -->
         <meta charset="utf-8">
-        <title>Educavo - Education HTML Template</title>
+        <title>Pearlbrill</title>
         <meta name="description" content="">
         <!-- responsive tag -->
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- favicon -->
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav-orange.png">
+        <link rel="shortcut icon" type="image/x-icon" href="assets/images/updated/logo.png">
         <!-- Bootstrap v4.4.1 css -->
         <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
         <!-- font-awesome css -->
@@ -37,6 +37,8 @@
         <link rel="stylesheet" type="text/css" href="assets/css/style.css"> <!-- This stylesheet dynamically changed from style.less -->
         <!-- responsive css -->
         <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -48,7 +50,7 @@
         <div id="loader" class="loader orange-color">
             <div class="loader-container">
                 <div class='loader-icon'>
-                    <img src="assets/images/pre-logo1.png" alt="">
+                    <img src="assets/images/updated/logo.png" alt="">
                 </div>
             </div>
         </div>
@@ -59,18 +61,53 @@
             <!--Full width header Start-->
             <div class="full-width-header home8-style4 main-home">
                 <!--Header Start-->
-                <header id="rs-header" class="rs-header">
-                    <!-- Menu Start -->
+                <header id="rs-header" class="rs-header">  <!-- Topbar Area Start -->
+                    <div class="topbar-area home8-topbar">
+                        <div class="container">
+                            <div class="row y-middle">
+                                <div class="col-md-7">
+                                    <ul class="topbar-contact">
+                                        <li>
+                                            <i class="flaticon-email"></i>
+                                            <a href="mailto:support@rstheme.com">info@pallasbrill.com </a>
+                                        </li>
+                                        <li>
+                                            <i class="flaticon-location"></i>
+                                            Get In touch UK: +44 7398 624184
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-5 text-right">
+                                    <ul class="topbar-right">
+                                        <li class="login-register">
+                                        
+                                            <i class="fa fa-sign-in"></i><a href="login.html">Login</a>
+                                        </li>
+                                        <li class="btn-part">
+                                            <a class="apply-btn" href="#">Brandon</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Topbar Area End -->
+                    {{-- <!-- Menu Start -->
+                    <div class="p-3 bg-danger text-light d-flex align-items-center justify-content-center gap-34 flex-wrap" id="announcement-container">
+                        <div class="mr-3">Get In touch UK:</div>
+                        <div class="mr-2"> +44 7398 624184 </div>
+                        <div>Email: info@pallasbrill.com or pallasbrill@gmail.com</div>
+                      </div> --}}
                     <div class="menu-area menu-sticky">
                         <div class="container">
                             <div class="row y-middle">
                                 <div class="col-lg-2">
                                     <div class="logo-cat-wrap">
                                         <div class="logo-part">
-                                            <a href="index.html">
-                                                <img class="normal-logo" src="assets/images/lite-logo.png" alt="">
-                                                <img class="sticky-logo" src="assets/images/dark-logo.png" alt="">
-                                            </a>
+                                            <a href="/" style="display: flex; flex-direction: row; align-items: center;justify-content: center; gap: 1rem;">
+                                                <img style="min-height: 70px;"  src="assets/images/updated/logo.png" alt="">
+                                                 <span style="color:white; font-size:1.5rem;">Pearlbrill</span>
+                                            </a> 
                                         </div>
                                     </div>
                                 </div>
@@ -84,140 +121,23 @@
                                           </div>
                                           <nav class="rs-menu">
                                              <ul class="nav-menu">
-                                                <li class="rs-mega-menu mega-rs menu-item-has-children current-menu-item"> <a href="index.html">Home</a>
-                                                    <ul class="mega-menu"> 
-                                                        <li class="mega-menu-container">
-                                                            <div class="mega-menu-innner">
-                                                                <div class="single-megamenu">
-                                                                    <ul class="sub-menu">
-                                                                        <li class="active"><a href="index.html">Main Demo</a> </li>
-                                                                        <li><a href="index2.html">Online Course</a> </li>
-                                                                        <li><a href="index3.html">University 01</a> </li>
-                                                                        <li><a href="index4.html">E-Learning</a> </li>
-                                                                        <li><a href="index5.html">Distance Learning</a> </li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div class="single-megamenu">
-                                                                    <ul class="sub-menu last-sub-menu">
-                                                                        <li><a href="index6.html">Personal Demo</a> </li>
-                                                                        <li><a href="index7.html">Online Training</a> </li>
-                                                                        <li><a href="index8.html">Online Learning</a> </li>
-                                                                        <li><a href="index9.html">Kitchen Coach</a> </li>
-                                                                        <li><a href="index10.html">University 02</a> </li>
-                                                                    </ul>
-                                                                </div>  
-                                                                <div class="single-megamenu">
-                                                                    <ul class="sub-menu last-sub-menu">
-                                                                        <li><a href="index11.html">Kindergarten 01</a> </li>
-                                                                        <li><a href="index12.html">Freelancing Course</a> </li>
-                                                                        <li><a href="index13.html">Gym Coach</a> </li>
-                                                                        <li><a href="index14.html">Courses Archive</a> </li>
-                                                                        <li><a href="index15.html">Courses Hub</a> </li>
-                                                                    </ul>
-                                                                </div> 
-                                                            </div>
-                                                        </li>
-                                                    </ul> <!-- //.mega-menu -->
+                                                <li class="rs-mega-menu mega-rs  current-menu-item"> 
+                                                    <a href="/">Home</a>
                                                 </li>
-                                                 <li class="menu-item-has-children">
-                                                     <a href="#">About</a>
-                                                     <ul class="sub-menu">
-                                                         <li><a href="about.html">About One</a> </li>
-                                                         <li><a href="about2.html">About Two</a> </li>
-                                                     </ul>
+                                                 <li >
+                                                     <a href="#">Samples</a>
                                                  </li>
-
-                                                 <li class="menu-item-has-children">
-                                                     <a href="#">Courses</a>
-                                                     <ul class="sub-menu">
-                                                         <li><a href="course.html">Courses One</a> </li>
-                                                         <li><a href="course2.html">Courses Two</a> </li>
-                                                         <li><a href="course3.html">Courses Three</a> </li>
-                                                         <li><a href="course4.html">Courses Four</a> 
-                                                         </li>
-                                                         <li><a href="course5.html">Courses Five</a> </li>
-                                                         <li><a href="course-single.html">Courses Single</a> </li>
-                                                     </ul>
-                                                 </li>
-
-                                                 <li class="menu-item-has-children">
-                                                     <a href="#">Pages</a>
-                                                     <ul class="sub-menu">
-                                                         <li class="menu-item-has-children right">
-                                                             <a href="#">Team</a>
-                                                             <ul class="sub-menu right">
-                                                                 <li><a href="team.html">Team One</a></li>
-                                                                 <li><a href="team2.html">Team Two</a></li>
-                                                                 <li><a href="team-single.html">Team Single</a></li>
-                                                             </ul>
-                                                         </li>
-                                                         <li class="menu-item-has-children">
-                                                             <a href="#">Event</a>
-                                                             <ul class="sub-menu right">
-                                                                 <li><a href="events-style1.html">Event One</a></li>
-                                                                 <li><a href="events-style2.html">Event Two</a></li>
-                                                                 <li><a href="events-style3.html">Event Three</a></li>
-                                                             </ul>
-                                                         </li>
-                                                         <li class="menu-item-has-children">
-                                                             <a href="#">Gallery</a>
-                                                             <ul class="sub-menu right">
-                                                                 <li><a href="gallery-style1.html">Gallery One</a></li>
-                                                                 <li><a href="gallery-style2.html">Gallery Two</a></li>
-                                                                 <li><a href="gallery-style3.html">Gallery Three</a></li>
-                                                             </ul>
-                                                         </li>
-                                                         <li class="menu-item-has-children">
-                                                             <a href="#">Shop</a>
-                                                             <ul class="sub-menu right">
-                                                                 <li><a href="shop.html">Shop</a></li>
-                                                                 <li><a href="shop-single.html">Shop Single</a></li>
-                                                                 <li><a href="cart.html">Cart</a></li>
-                                                                 <li><a href="checkout.html">Checkout</a></li>
-                                                             </ul>
-                                                         </li>
-                                                         <li class="menu-item-has-children">
-                                                             <a href="#">Others</a>
-                                                             <ul class="sub-menu right">
-                                                                 <li><a href="faq.html">FAQ</a></li>
-                                                                 <li><a href="error.html">404 Page</a></li>
-                                                                 <li><a href="login.html">Login</a></li>
-                                                                 <li><a href="register.html">Register</a></li>
-                                                             </ul>
-                                                         </li>
-                                                     </ul>
-                                                 </li>
-
-                                                 <li class="menu-item-has-children">
+                                                 <li >
                                                      <a href="#">Blog</a>
-                                                     <ul class="sub-menu">
-                                                         <li><a href="blog.html">Blog</a></li>
-                                                         <li class="menu-item-has-children">
-                                                             <a href="#">Blog Sidebar</a>
-                                                             <ul class="sub-menu right">
-                                                                 <li><a href="blog-left.html">Blog Left Sidebar</a></li>
-                                                                 <li><a href="blog-right.html">Blog Right Sidebar</a></li>
-                                                             </ul>
-                                                         </li>
-                                                         <li class="menu-item-has-children">
-                                                             <a href="#">Single Post</a>
-                                                             <ul class="sub-menu right">
-                                                                 <li><a href="blog-post-left.html">Post Left Sidebar</a></li>
-                                                                 <li><a href="blog-post-right.html">Post Right Sidebar</a></li>
-                                                                 <li><a href="blog-single.html">Full Width Post</a></li>
-                                                             </ul>
-                                                         </li>
-                                                     </ul>
                                                  </li>
-
-                                                 <li class="menu-item-has-children">
+                                                 <li >
+                                                     <a href="#">Tutoring</a>
+                                                 </li>
+                                                 <li >
+                                                     <a href="#">About</a>
+                                                 </li>
+                                                 <li >
                                                      <a href="#">Contact</a>
-                                                     <ul class="sub-menu">
-                                                        <li><a href="contact.html">Contact One</a> </li>
-                                                        <li><a href="contact2.html">Contact Two</a> </li>
-                                                        <li><a href="contact3.html">Contact Three</a> </li>
-                                                        <li><a href="contact4.html">Contact Four</a> </li>
-                                                     </ul>
                                                  </li>
                                              </ul> <!-- //.nav-menu -->
                                           </nav>                                       
@@ -235,14 +155,10 @@
                                                 </a>
                                             </li>
                                             <li class="user-icon cart-inner no-border mini-cart-active">
-                                                <a href="#"><i class="fa fa-shopping-bag"></i></a>
                                                 <div class="woocommerce-mini-cart text-left">
                                                     <div class="cart-bottom-part">
                                                         <ul class="cart-icon-product-list">
-                                                            <li class="display-flex">
-                                                                <div class="icon-cart">
-                                                                    <a href="#"><i class="fa fa-times"></i></a>
-                                                                </div>
+                                                            <li class="display-flex">                                                              
                                                                 <div class="product-info">
                                                                     <a href="cart.html">Law Book</a><br>
                                                                     <span class="quantity">1 × $30.00</span>
@@ -277,9 +193,6 @@
                                                     </div>
                                                 </div> 
                                             </li>
-                                            <li class="user-icon last-icon">
-                                                <a href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
-                                            </li>
                                             
                                         </ul>
                                         <span>
@@ -306,10 +219,10 @@
                             </div>
                         </div>
                         <div class="canvas-logo">
-                            <a href="index.html"><img src="assets/images/dark-logo.png" alt="logo"></a>
+                            <a href="index.html"><img src="assets/images/updated/logo.png" alt="logo"></a>
                         </div>
                         <div class="offcanvas-text">
-                            <p>We denounce with righteous indige nationality and dislike men who are so beguiled and demo  by the charms of pleasure of the moment data com so blinded by desire.</p>
+                            <p>About description...indige nationality and dislike men who are so beguiled and demo  by the charms of pleasure of the moment data com so blinded by desire.</p>
                         </div>
                         <div class="offcanvas-gallery">
                             <div class="gallery-img">
@@ -331,17 +244,7 @@
                                 <a class="image-popup" href="assets/images/gallery/6.jpg"><img src="assets/images/gallery/6.jpg" alt=""></a>
                             </div>
                         </div>
-                        <div class="map-img">
-                            <img src="assets/images/map.jpg" alt="">
-                        </div>
-                        <div class="canvas-contact">
-                            <ul class="social">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
+                      
                     </nav>
                     <!-- Canvas Menu end -->
                 </header>
@@ -358,7 +261,7 @@
                                 <div class="sl-sub-title wow bounceInLeft" data-wow-delay="300ms" data-wow-duration="2000ms">Start to learning today</div>
                                 <h1 class="sl-title wow fadeInRight" data-wow-delay="600ms" data-wow-duration="2000ms">Online Courses From Leading Experts</h1>
                                 <div class="sl-btn wow fadeInUp" data-wow-delay="900ms" data-wow-duration="2000ms">
-                                    <a class="readon orange-btn main-home" href="#">Find Courses</a>
+                                    <a class="readon orange-btn main-home" href="#">Get Started</a>
                                 </div>
                             </div>
                         </div>
@@ -369,7 +272,7 @@
                                 <div class="sl-sub-title wow bounceInLeft" data-wow-delay="300ms" data-wow-duration="2000ms">Start to learning today</div>
                                 <h1 class="sl-title wow fadeInRight" data-wow-delay="600ms" data-wow-duration="2000ms">Explore Interests and Career With Courses</h1>
                                 <div class="sl-btn wow fadeInUp" data-wow-delay="900ms" data-wow-duration="2000ms">
-                                    <a class="readon orange-btn main-home" href="#">Find Courses</a>
+                                    <a class="readon orange-btn main-home" href="#">Get Started</a>
                                 </div>
                             </div>
                         </div>
@@ -387,7 +290,7 @@
                                     </div>
                                     <div class="content-part">
                                         <h4 class="title">
-                                            <span class="watermark">5,320 online courses</span>
+                                            <span class="watermark">30+ blogs & samples</span>
                                         </h4>
                                         <p class="dese">
                                            Enjoy a variety of fresh topics
@@ -430,14 +333,14 @@
                 </div>
                 <!-- Features Section End -->
             </div>
-            <!-- Slider Section End -->                    
+            <!-- Slider Section End -->  
 
             <!-- Categories Section Start -->
-            <div id="rs-categories" class="rs-categories main-home pt-90 pb-100 md-pt-60 md-pb-40">
+            <div id="rs-categories" class="rs-categories main-home pt-90 pb-10 md-pt-60 md-pb-10">
                 <div class="container">
                     <div class="sec-title3 text-center mb-45">
                         <div class="sub-title"> Top Categories</div>
-                        <h2 class="title black-color">Popular Online Categories</h2>
+                        <h2 class="title black-color">All Categories</h2>
                     </div>
                     <div class="row mb-35">
                         <div class="col-lg-4 col-md-6 mb-30">
@@ -446,338 +349,322 @@
                                     <a href="#"><img src="assets/images/categories/main-home/1.jpg" alt=""></a>
                                 </div>
                                 <div class="contents">
-                                    <div class="img-part">
+                                    {{-- <div class="img-part">
                                         <img src="assets/images/categories/main-home/icon/1.png" alt="">
-                                    </div>
+                                    </div> --}}
                                     <div class="content-wrap">
-                                        <h2 class="title"><a href="#">General Education</a></h2>
-                                        <span class="course-qnty">02 Courses</span>
+                                        <h2 class="title"><a href="#">CIPD Course Levels</a></h2>
+                                        <span class="course-qnty">Pallasbrill helps you get through the three CIPD levels (3,5, and 7). At the Foundation, Intermediate, and Advanced levels, Pallasbrill walks with you and ensures you get the right status.</span>
                                     </div>
                                 </div>
                             </div>
                         </div>  
-                        <div class="col-lg-4 col-md-6 mb-30">
-                            <div class="categories-items">
-                                <div class="cate-images">
-                                    <a href="#"><img src="assets/images/categories/main-home/2.jpg" alt=""></a>
-                                </div>
-                                <div class="contents">
-                                    <div class="img-part">
-                                        <img src="assets/images/categories/main-home/icon/2.png" alt="">
-                                    </div>
-                                    <div class="content-wrap">
-                                        <h2 class="title"><a href="#">Computer Science</a></h2>
-                                        <span class="course-qnty">02 Courses</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>  
-                        <div class="col-lg-4 col-md-6 mb-30">
-                            <div class="categories-items">
-                                <div class="cate-images">
-                                    <a href="#"><img src="assets/images/categories/main-home/3.jpg" alt=""></a>
-                                </div>
-                                <div class="contents">
-                                    <div class="img-part">
-                                        <img src="assets/images/categories/main-home/icon/3.png" alt="">
-                                    </div>
-                                    <div class="content-wrap">
-                                        <h2 class="title"><a href="#">Civil Engineering</a></h2>
-                                        <span class="course-qnty">02 Courses</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>  
-                        <div class="col-lg-4 col-md-6 mb-30">
-                            <div class="categories-items">
-                                <div class="cate-images">
-                                    <a href="#"><img src="assets/images/categories/main-home/4.jpg" alt=""></a>
-                                </div>
-                                <div class="contents">
-                                    <div class="img-part">
-                                        <img src="assets/images/categories/main-home/icon/4.png" alt="">
-                                    </div>
-                                    <div class="content-wrap">
-                                        <h2 class="title"><a href="#">Artificial Intelligence</a></h2>
-                                        <span class="course-qnty">02 Courses</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>  
+                  
                         <div class="col-lg-4 col-md-6 mb-30">
                             <div class="categories-items">
                                 <div class="cate-images">
                                     <a href="#"><img src="assets/images/categories/main-home/5.jpg" alt=""></a>
                                 </div>
                                 <div class="contents">
-                                    <div class="img-part">
-                                        <img src="assets/images/categories/main-home/icon/5.png" alt="">
-                                    </div>
                                     <div class="content-wrap">
-                                        <h2 class="title"><a href="#">Business Studies</a></h2>
-                                        <span class="course-qnty">02 Courses</span>
+                                        <h2 class="title"><a href="#">Reports</a></h2>
+                                        <span class="course-qnty">Getting the right certification by CIPD requires the completion of various reports, including HRC, PRM, and LMS. Pallasbrill helps you to develop quality reports that exceed expectations.</span>
                                     </div>
                                 </div>
                             </div>
                         </div>  
+          
+                        <div class="col-lg-4 col-md-6 mb-30">
+                            <div class="categories-items">
+                                <div class="cate-images">
+                                    <a href="#"><img src="assets/images/categories/main-home/3.jpg" alt=""></a>
+                                </div>
+                                <div class="contents">
+                                    <div class="content-wrap">
+                                        <h2 class="title"><a href="#">presentations</a></h2>
+                                        <span class="course-qnty">CIPD learning process requires the development of various presentations about various topics. Pallasbrill works with everyone to ensure an interactive and appealing presentation.
+
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="col-lg-4 col-md-6 mb-30">
                             <div class="categories-items">
                                 <div class="cate-images">
                                     <a href="#"><img src="assets/images/categories/main-home/6.jpg" alt=""></a>
                                 </div>
                                 <div class="contents">
-                                    <div class="img-part">
-                                        <img src="assets/images/categories/main-home/icon/6.png" alt="">
-                                    </div>
                                     <div class="content-wrap">
-                                        <h2 class="title"><a href="#">Computer Engineering</a></h2>
-                                        <span class="course-qnty">02 Courses</span>
+                                        <h2 class="title"><a href="#">CPD and Reflection</a></h2>
+                                        <span class="course-qnty">Growth and development in CIPD involve reflection on the course content and experience and is a continuous process. Pallasbrill helps you develop smart goals and continuously update your CPD to achieve the milestones. </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-12 text-center">
-                        <a class="readon orange-btn main-home" href="#">View All categories </a>
-                    </div>
                 </div>
             </div>
             <!-- Categories Section End -->
-
-            <!-- Categories Section Start -->
-            <div id="rs-popular-courses" class="rs-popular-courses main-home event-bg pt-100 pb-100 md-pt-70 md-pb-70">
-                <div class="container">
-                    <div class="sec-title3 text-center mb-45">
-                        <div class="sub-title">Select Courses</div>
-                        <h2 class="title black-color">Explore Popular Courses</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 mb-30">
-                           <div class="courses-item">
-                                <div class="courses-grid">
-                                    <div class="img-part">
-                                        <a href="#"><img src="assets/images/courses/main-home/1.jpg" alt=""></a>
-                                    </div>
-                                    <div class="content-part">
-                                        <div class="info-meta">
-                                            <ul>                                                
-                                                <li class="ratings">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    (1 rating)
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="course-price">
-                                            <span class="price">Free</span>
-                                        </div>
-                                        <h3 class="title"><a href="#">Fitness Development Strategy Buildup Laoreet</a></h3>
-                                        <ul class="meta-part">
-                                            <li class="user">
-                                                <i class="fa fa-user"></i>
-                                                 25 Students                                        
-                                            </li>
-                                            <li class="user">
-                                                <i class="fa fa-file"></i>
-                                                6 Lessons                                        
-                                            </li>
-                                        </ul>
+            
+              <!-- Samples Section Start -->
+              <div id="rs-blog" class="rs-blog main-home pb-10 pt-100 md-pt-10 md-pb-10">
+                <div class="container">  
+                      <div class="sec-title3 text-center mb-50">
+                        <div class="sub-title"> Our Samples</div>
+                        <h2 class="title"> View Our Latest Samples</h2>
+                      </div> 
+                    <div class="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30" data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="false" data-nav-speed="false" data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="2" data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="1" data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="3" data-md-device-nav="false" data-md-device-dots="false">
+                        <div class="blog-item">
+                            <div class="blog-content">
+                                <ul class="blog-meta">
+                                    <li><i class="fa fa-user"></i> Admin</li>
+                                    <li><i class="fa fa-calendar"></i>December 15, 2020</li>
+                                </ul>
+                                <h3 class="title"><a href="blog-single.html">Education is The Process of Facilitating Learning</a></h3>
+                                <div class="desc">the acquisition of knowledge, skills, values befs, and habits. Educational methods include teach ing, training, storytelling...</div>
+                                <div class="btn-btm">
+                                    <div class="float-right">
+                                        <a href="#">Read More  <i class="fa fa-chevron-right"></i></a>
                                     </div>
                                 </div>
-                           </div>
+                            </div>
                         </div> 
-                        <div class="col-lg-4 col-md-6 mb-30">
-                           <div class="courses-item">
-                                <div class="courses-grid">
-                                    <div class="img-part">
-                                        <a href="#"><img src="assets/images/courses/main-home/2.jpg" alt=""></a>
-                                    </div>
-                                    <div class="content-part">
-                                        <div class="info-meta">
-                                            <ul>                                                
-                                                <li class="ratings">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    (1 rating)
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="course-price">
-                                            <span class="price">$40.00</span>
-                                        </div>
-                                        <h3 class="title"><a href="#">Artificial Intelligence Fundamental Startup Justo</a></h3>
-                                        <ul class="meta-part">
-                                            <li class="user">
-                                                <i class="fa fa-user"></i>
-                                                 25 Students                                        
-                                            </li>
-                                            <li class="user">
-                                                <i class="fa fa-file"></i>
-                                                6 Lessons                                        
-                                            </li>
+                        <div class="blog-item">
+                            <div class="blog-content">
+                                <ul class="blog-meta">
+                                    <li><i class="fa fa-user-o"></i> Admin</li>
+                                    <li><i class="fa fa-calendar"></i>October 15, 2020</li>
+                                </ul>
+                                <h3 class="title"><a href="blog-single.html">High school program starting soon 2021 </a></h3>
+                                <div class="desc">the acquisition of knowledge, skills, values befs, and habits. Educational methods include teach ing, training, storytelling</div>
+                                <div class="btn-btm">
+                                    <div class="cat-list">
+                                        <ul class="post-categories">
+                                            <li><a href="#">College</a></li>
                                         </ul>
                                     </div>
+                                    <div class="float-right">
+                                        <a href="#">Read More  <i class="fa fa-chevron-right"></i></a>
+                                    </div>
                                 </div>
-                           </div>
+                            </div>
                         </div> 
-                        <div class="col-lg-4 col-md-6 mb-30">
-                           <div class="courses-item">
-                                <div class="courses-grid">
-                                    <div class="img-part">
-                                        <a href="#"><img src="assets/images/courses/home8/2.jpg" alt=""></a>
-                                    </div>
-                                    <div class="content-part">
-                                        <div class="info-meta">
-                                            <ul>                                                
-                                                <li class="ratings">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    (1 rating)
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="course-price">
-                                            <span class="price">$35.00</span>
-                                        </div>
-                                        <h3 class="title"><a href="#">Computer Science Startup Varius et Commodo</a></h3>
-                                        <ul class="meta-part">
-                                            <li class="user">
-                                                <i class="fa fa-user"></i>
-                                                 25 Students                                        
-                                            </li>
-                                            <li class="user">
-                                                <i class="fa fa-file"></i>
-                                                6 Lessons                                        
-                                            </li>
+                        <div class="blog-item">
+                            <div class="blog-content">
+                                <ul class="blog-meta">
+                                    <li><i class="fa fa-user"></i> Admin</li>
+                                    <li><i class="fa fa-calendar"></i>April 25, 2020</li>
+                                </ul>
+                                <h3 class="title"><a href="blog-single.html">Shutdown of schools extended to Aug 31 </a></h3>
+                                <div class="desc">the acquisition of knowledge, skills, values befs, and habits. Educational methods include teach ing, training, storytelling</div>
+                                <div class="btn-btm">
+                                    <div class="cat-list">
+                                        <ul class="post-categories">
+                                            <li><a href="#">College</a></li>
                                         </ul>
                                     </div>
+                                    <div class="float-right">
+                                        <a href="#">Read More  <i class="fa fa-chevron-right"></i></a>
+                                    </div>
                                 </div>
-                           </div>
+                            </div>
                         </div> 
-                        <div class="col-lg-4 col-md-6 md-mb-30">
-                           <div class="courses-item">
-                                <div class="courses-grid">
-                                    <div class="img-part">
-                                        <a href="#"><img src="assets/images/courses/home8/4.jpg" alt=""></a>
-                                    </div>
-                                    <div class="content-part">
-                                        <div class="info-meta">
-                                            <ul>                                                
-                                                <li class="ratings">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    (1 rating)
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="course-price">
-                                            <span class="price">$32.00</span>
-                                        </div>
-                                        <h3 class="title"><a href="#">Testy & Delicious Food Recipes for Lunch Tellus</a></h3>
-                                        <ul class="meta-part">
-                                            <li class="user">
-                                                <i class="fa fa-user"></i>
-                                                 25 Students                                        
-                                            </li>
-                                            <li class="user">
-                                                <i class="fa fa-file"></i>
-                                                6 Lessons                                        
-                                            </li>
+                        <div class="blog-item">
+                            <div class="blog-content">
+                                <ul class="blog-meta">
+                                    <li><i class="fa fa-user"></i> Admin</li>
+                                    <li><i class="fa fa-calendar"></i>June 20, 2010</li>
+                                </ul>
+                                <h3 class="title"><a href="blog-single.html">This is a great source of content for anyone… </a></h3>
+                                <div class="desc">the acquisition of knowledge, skills, values befs, and habits. Educational methods include teach ing, training, storytelling</div>
+                                <div class="btn-btm">
+                                    <div class="cat-list">
+                                        <ul class="post-categories">
+                                            <li><a href="#">College</a></li>
                                         </ul>
                                     </div>
+                                    <div class="float-right">
+                                        <a href="#">Read More  <i class="fa fa-chevron-right"></i></a>
+                                    </div>
                                 </div>
-                           </div>
+                            </div>
                         </div> 
-                        <div class="col-lg-4 col-md-6 sm-mb-30">
-                           <div class="courses-item">
-                                <div class="courses-grid">
-                                    <div class="img-part">
-                                        <a href="#"><img src="assets/images/courses/home8/5.jpg" alt=""></a>
-                                    </div>
-                                    <div class="content-part">
-                                        <div class="info-meta">
-                                            <ul>                                                
-                                                <li class="ratings">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    (1 rating)
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="course-price">
-                                            <span class="price">$22.00</span>
-                                        </div>
-                                        <h3 class="title"><a href="#">Lawyer Advance Mental Simulator Handle Nulla</a></h3>
-                                        <ul class="meta-part">
-                                            <li class="user">
-                                                <i class="fa fa-user"></i>
-                                                 25 Students                                        
-                                            </li>
-                                            <li class="user">
-                                                <i class="fa fa-file"></i>
-                                                6 Lessons                                        
-                                            </li>
+                        <div class="blog-item">
+                            <div class="blog-content">
+                                <ul class="blog-meta">
+                                    <li><i class="fa fa-user"></i> Admin</li>
+                                    <li><i class="fa fa-calendar"></i>August 30, 2020</li>
+                                </ul>
+                                <h3 class="title"><a href="blog-single.html">Pandemic drives millions from Latin America’s</a></h3>
+                                <div class="desc">the acquisition of knowledge, skills, values befs, and habits. Educational methods include teach ing, training, storytelling</div>
+                                <div class="btn-btm">
+                                    <div class="cat-list">
+                                        <ul class="post-categories">
+                                            <li><a href="#">College</a></li>
                                         </ul>
                                     </div>
+                                    <div class="float-right">
+                                        <a href="#">Read More  <i class="fa fa-chevron-right"></i></a>
+                                    </div>
                                 </div>
-                           </div>
+                            </div>
                         </div> 
-                        <div class="col-lg-4 col-md-6">
-                           <div class="courses-item">
-                                <div class="courses-grid">
-                                    <div class="img-part">
-                                        <a href="#"><img src="assets/images/courses/home8/6.jpg" alt=""></a>
-                                    </div>
-                                    <div class="content-part">
-                                        <div class="info-meta">
-                                            <ul>                                                
-                                                <li class="ratings">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    (1 rating)
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="course-price">
-                                            <span class="price">$28.00</span>
-                                        </div>
-                                        <h3 class="title"><a href="#">Computer Fundamentals Basic Startup Ultricies</a></h3>
-                                        <ul class="meta-part">
-                                            <li class="user">
-                                                <i class="fa fa-user"></i>
-                                                 25 Students                                        
-                                            </li>
-                                            <li class="user">
-                                                <i class="fa fa-file"></i>
-                                                6 Lessons                                        
-                                            </li>
+                        <div class="blog-item">
+                            <div class="blog-content">
+                                <ul class="blog-meta">
+                                    <li><i class="fa fa-user"></i> Admin</li>
+                                    <li><i class="fa fa-calendar"></i>May 10, 2020</li>
+                                </ul>
+                                <h3 class="title"><a href="blog-single.html">Modern School the lovely valley team work</a></h3>
+                                <div class="desc">the acquisition of knowledge, skills, values befs, and habits. Educational methods include teach ing, training, storytelling</div>
+                                <div class="btn-btm">
+                                    <div class="cat-list">
+                                        <ul class="post-categories">
+                                            <li><a href="#">College</a></li>
                                         </ul>
                                     </div>
+                                    <div class="float-right">
+                                        <a href="#">Read More  <i class="fa fa-chevron-right"></i></a>
+                                    </div>
                                 </div>
-                           </div>
+                            </div>
                         </div>
-                    </div>
+                     </div>
                 </div>
             </div>
-            <!-- Categories Section End -->
+            <!-- Samples Section End -->
+
+            
+            <!-- Blog Section Start -->
+            <div id="rs-blog" class="rs-blog main-home pb-100 pt-100 md-pt-70 md-pb-70">
+                <div class="container">  
+                      <div class="sec-title3 text-center mb-50">
+                        <div class="sub-title"> Blogs</div>
+                        <h2 class="title"> Latest Blogs & events</h2>
+                      </div> 
+                    <div class="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30" data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="false" data-nav-speed="false" data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="2" data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="1" data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="3" data-md-device-nav="false" data-md-device-dots="false">
+                        <div class="blog-item">
+                            <div class="image-part">
+                                <img src="assets/images/blog/style2/1.jpg" alt="">
+                            </div>
+                            <div class="blog-content">
+                                <ul class="blog-meta">
+                                    <li><i class="fa fa-user"></i> Admin</li>
+                                    <li><i class="fa fa-calendar"></i>December 15, 2020</li>
+                                </ul>
+                                <h3 class="title"><a href="blog-single.html">Education is The Process of Facilitating Learning</a></h3>
+                                <div class="desc">the acquisition of knowledge, skills, values befs, and habits. Educational methods include teach ing, training, storytelling</div>
+                                <div class="btn-btm">
+                                
+                                    <div >
+                                        <a href="#">Read More<i class="fas fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="blog-item">
+                            <div class="image-part">
+                                <img src="assets/images/blog/style2/2.jpg" alt="">
+                            </div>
+                            <div class="blog-content">
+                                <ul class="blog-meta">
+                                    <li><i class="fa fa-user"></i> Admin</li>
+                                    <li><i class="fa fa-calendar"></i>October 15, 2020</li>
+                                </ul>
+                                <h3 class="title"><a href="blog-single.html">High school program starting soon 2021 </a></h3>
+                                <div class="desc">the acquisition of knowledge, skills, values befs, and habits. Educational methods include teach ing, training, storytelling</div>
+                                <div class="btn-btm">
+                                
+                                    <div >
+                                        <a href="#">Read More<i class="fas fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="blog-item">
+                            <div class="image-part">
+                                <img src="assets/images/blog/style2/3.jpg" alt="">
+                            </div>
+                            <div class="blog-content">
+                                <ul class="blog-meta">
+                                    <li><i class="fa fa-user"></i> Admin</li>
+                                    <li><i class="fa fa-calendar"></i>April 25, 2020</li>
+                                </ul>
+                                <h3 class="title"><a href="blog-single.html">Shutdown of schools extended to Aug 31 </a></h3>
+                                <div class="desc">the acquisition of knowledge, skills, values befs, and habits. Educational methods include teach ing, training, storytelling</div>
+                                <div class="btn-btm">
+                                
+                                    <div >
+                                        <a href="#">Read More<i class="fas fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="blog-item">
+                            <div class="image-part">
+                                <img src="assets/images/blog/style2/4.jpg" alt="">
+                            </div>
+                            <div class="blog-content">
+                                <ul class="blog-meta">
+                                    <li><i class="fa fa-user"></i> Admin</li>
+                                    <li><i class="fa fa-calendar"></i>June 20, 2010</li>
+                                </ul>
+                                <h3 class="title"><a href="blog-single.html">This is a great source of content for anyone… </a></h3>
+                                <div class="desc">the acquisition of knowledge, skills, values befs, and habits. Educational methods include teach ing, training, storytelling</div>
+                                <div class="btn-btm">
+                                
+                                    <div >
+                                        <a href="#">Read More<i class="fas fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="blog-item">
+                            <div class="image-part">
+                                <img src="assets/images/blog/style2/5.jpg" alt="">
+                            </div>
+                            <div class="blog-content">
+                                <ul class="blog-meta">
+                                    <li><i class="fa fa-user"></i> Admin</li>
+                                    <li><i class="fa fa-calendar"></i>August 30, 2020</li>
+                                </ul>
+                                <h3 class="title"><a href="blog-single.html">Pandemic drives millions from Latin America’s</a></h3>
+                                <div class="desc">the acquisition of knowledge, skills, values befs, and habits. Educational methods include teach ing, training, storytelling</div>
+                                <div class="btn-btm">
+                                
+                                    <div >
+                                        <a href="#">Read More<i class="fas fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="blog-item">
+                            <div class="image-part">
+                                <img src="assets/images/blog/style2/6.jpg" alt="">
+                            </div>
+                            <div class="blog-content">
+                                <ul class="blog-meta">
+                                    <li><i class="fa fa-user"></i> Admin</li>
+                                    <li><i class="fa fa-calendar"></i>May 10, 2020</li>
+                                </ul>
+                                <h3 class="title"><a href="blog-single.html">Modern School the lovely valley team work</a></h3>
+                                <div class="desc">the acquisition of knowledge, skills, values befs, and habits. Educational methods include teach ing, training, storytelling</div>
+                                <div class="btn-btm">
+                                
+                                    <div >
+                                        <a href="#">Read More<i class="fas fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+            <!-- Blog Section End -->
+
+           
 
             <!-- CTA Section Start -->
             <div class="rs-cta main-home">
@@ -787,11 +674,14 @@
                             <div class="offset-lg-6"></div>
                             <div class="col-lg-6 pl-70 md-pl-15">
                                 <div class="sec-title3 mb-40">
-                                    <h2 class="title white-color mb-16">20% Offer Running - Join Today</h2>
-                                    <div class="desc white-color pr-100 md-pr-0">We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of your moment, so blinded by desire those who fail in their duty through weakness. These cases are perfectly simple and easy every pleasure is to be welcomed and every pain avoided.</div>
-                                </div>
-                                <div class="btn-part">
-                                    <a class="readon orange-btn transparent" href="#">Register Now</a>
+                                    <h2 class="title white-color mb-16">Key Performance Indicator</h2>
+                                    <div class="desc white-color pr-100 md-pr-0">Get access to quality and wide tutoring materials and services to meet your HR growth and development needs. 
+
+                                        Guaranteed 100% free from plagiarism and high-quality services. 
+                                        
+                                        Timely delivery and 24/7 support availability. 
+                                        
+                                        High ROI on your investment in Pallasbrill tutoring and learning services.</div>
                                 </div>
                             </div>
                         </div>
@@ -799,76 +689,6 @@
                 </div>
             </div>
             <!-- CTA Section End --> 
-
-            <!-- Faq Section Start -->
-            <div class="rs-faq-part style1 orange-color pt-100 pb-100 md-pt-70 md-pb-70">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 padding-0">
-                          <div class=" main-part">
-                            <div class="title mb-40 md-mb-15">
-                                <h2 class="text-part">Frequently Asked Questions</h2>
-                            </div>
-                              <div class="faq-content">
-                                  <div id="accordion" class="accordion">
-                                     <div class="card">
-                                         <div class="card-header">
-                                             <a class="card-link" data-toggle="collapse" href="#collapseOne">What are the requirements ?</a>
-                                         </div>
-                                         <div id="collapseOne" class="collapse show" data-parent="#accordion">
-                                             <div class="card-body">
-                                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-                                             </div>
-                                         </div>
-                                     </div>
-                                      <div class="card">
-                                          <div class="card-header">
-                                             
-                                              <a class="card-link collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false">Does Educavo offer free courses?</a>
-                                          </div>
-                                          <div id="collapseTwo" class="collapse" data-parent="#accordion" style="">
-                                              <div class="card-body">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <div class="card">
-                                          <div class="card-header">
-                                             
-                                              <a class="card-link collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false">What is the transfer application process?</a>
-                                          </div>
-                                          <div id="collapseThree" class="collapse" data-parent="#accordion" style="">
-                                              <div class="card-body">
-                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-                                              </div>
-                                          </div>
-                                      </div>     
-                                      <div class="card">
-                                          <div class="card-header">
-                                             
-                                              <a class="card-link collapsed" data-toggle="collapse" href="#collapsefour" aria-expanded="false">What is distance education?</a>
-                                          </div>
-                                          <div id="collapsefour" class="collapse" data-parent="#accordion" style="">
-                                              <div class="card-body">
-                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 padding-0">
-                            <div class="img-part media-icon orange-color">
-                                <a class="popup-videos" href="https://www.youtube.com/watch?v=atMUy_bPoQI">
-                                    <i class="fa fa-play"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- faq Section Start -->
        
 
             <!-- Testimonial Section Start -->
@@ -876,7 +696,7 @@
                 <div class="container">
                     <div class="sec-title3 mb-50 md-mb-30 text-center">
                         <div class="sub-title primary">Testimonial</div>
-                        <h2 class="title white-color">What Students Saying</h2>
+                        <h2 class="title white-color">What Others Are Saying</h2>
                     </div>
                     <div class="rs-carousel owl-carousel" 
                         data-loop="true" 
@@ -997,19 +817,15 @@
                             </div>
                             <div class="blog-content">
                                 <ul class="blog-meta">
-                                    <li><i class="fa fa-user-o"></i> Admin</li>
+                                    <li><i class="fa fa-user"></i> Admin</li>
                                     <li><i class="fa fa-calendar"></i>December 15, 2020</li>
                                 </ul>
                                 <h3 class="title"><a href="blog-single.html">Education is The Process of Facilitating Learning</a></h3>
                                 <div class="desc">the acquisition of knowledge, skills, values befs, and habits. Educational methods include teach ing, training, storytelling</div>
                                 <div class="btn-btm">
-                                    <div class="cat-list">
-                                        <ul class="post-categories">
-                                            <li><a href="#">College</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="rs-view-btn">
-                                        <a href="#">Read More</a>
+                                
+                                    <div >
+                                        <a href="#">Read More<i class="fas fa-chevron-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -1020,19 +836,15 @@
                             </div>
                             <div class="blog-content">
                                 <ul class="blog-meta">
-                                    <li><i class="fa fa-user-o"></i> Admin</li>
+                                    <li><i class="fa fa-user"></i> Admin</li>
                                     <li><i class="fa fa-calendar"></i>October 15, 2020</li>
                                 </ul>
                                 <h3 class="title"><a href="blog-single.html">High school program starting soon 2021 </a></h3>
                                 <div class="desc">the acquisition of knowledge, skills, values befs, and habits. Educational methods include teach ing, training, storytelling</div>
                                 <div class="btn-btm">
-                                    <div class="cat-list">
-                                        <ul class="post-categories">
-                                            <li><a href="#">College</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="rs-view-btn">
-                                        <a href="#">Read More</a>
+                                
+                                    <div >
+                                        <a href="#">Read More<i class="fas fa-chevron-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -1049,13 +861,9 @@
                                 <h3 class="title"><a href="blog-single.html">Shutdown of schools extended to Aug 31 </a></h3>
                                 <div class="desc">the acquisition of knowledge, skills, values befs, and habits. Educational methods include teach ing, training, storytelling</div>
                                 <div class="btn-btm">
-                                    <div class="cat-list">
-                                        <ul class="post-categories">
-                                            <li><a href="#">College</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="rs-view-btn">
-                                        <a href="#">Read More</a>
+                                
+                                    <div >
+                                        <a href="#">Read More<i class="fas fa-chevron-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -1072,13 +880,9 @@
                                 <h3 class="title"><a href="blog-single.html">This is a great source of content for anyone… </a></h3>
                                 <div class="desc">the acquisition of knowledge, skills, values befs, and habits. Educational methods include teach ing, training, storytelling</div>
                                 <div class="btn-btm">
-                                    <div class="cat-list">
-                                        <ul class="post-categories">
-                                            <li><a href="#">College</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="rs-view-btn">
-                                        <a href="#">Read More</a>
+                                
+                                    <div >
+                                        <a href="#">Read More<i class="fas fa-chevron-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -1095,13 +899,9 @@
                                 <h3 class="title"><a href="blog-single.html">Pandemic drives millions from Latin America’s</a></h3>
                                 <div class="desc">the acquisition of knowledge, skills, values befs, and habits. Educational methods include teach ing, training, storytelling</div>
                                 <div class="btn-btm">
-                                    <div class="cat-list">
-                                        <ul class="post-categories">
-                                            <li><a href="#">College</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="rs-view-btn">
-                                        <a href="#">Read More</a>
+                                
+                                    <div >
+                                        <a href="#">Read More<i class="fas fa-chevron-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -1118,13 +918,9 @@
                                 <h3 class="title"><a href="blog-single.html">Modern School the lovely valley team work</a></h3>
                                 <div class="desc">the acquisition of knowledge, skills, values befs, and habits. Educational methods include teach ing, training, storytelling</div>
                                 <div class="btn-btm">
-                                    <div class="cat-list">
-                                        <ul class="post-categories">
-                                            <li><a href="#">College</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="rs-view-btn">
-                                        <a href="#">Read More</a>
+                                
+                                    <div >
+                                        <a href="#">Read More<i class="fas fa-chevron-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -1138,23 +934,24 @@
             <div class="rs-newsletter style1 orange-color mb--90 sm-mb-0 sm-pb-70">
                 <div class="container">
                     <div class="newsletter-wrap">
-                        <div class="row y-middle">
-                            <div class="col-lg-6 col-md-12 md-mb-30">
-                               <div class="content-part">
-                                   <div class="sec-title">
-                                       <div class="title-icon md-mb-15">
-                                           <img src="assets/images/newsletter.png" alt="images">
-                                       </div>
-                                       <h2 class="title mb-0 white-color">Subscribe to Newsletter</h2>
+                        <div style="display: flex; flex-direction: column; gap: 1;">
+                                   <div >
+                                    <h5 style=" color:#ff5421;text-transform: uppercase;" >Accepted Payments</h5>
                                    </div>
-                               </div>
-                            </div>
-                            <div class="col-lg-6 col-md-12">
-                                <form class="newsletter-form">
-                                    <input type="email" name="email" placeholder="Enter Your Email" required="">
-                                    <button type="submit">Submit</button>
-                                </form>
-                            </div>
+                                   <div style="display: flex; align-items: center; justify-content: space-between;" >
+                                       <div>
+                                           <img style="height: 40px;" src="assets/images/updated/accepted_payments/paypal_0.png" alt="images">
+                                       </div>                                     
+                                       <div>
+                                           <img style="height: 40px;" src="assets/images/updated/accepted_payments/visa_1.png" alt="images">
+                                       </div>                                     
+                                       <div>
+                                           <img style="height: 40px;" src="assets/images/updated/accepted_payments/western_0.png" alt="images">
+                                       </div>                                     
+                                       <div>
+                                           <img style="height: 40px;" src="assets/images/updated/accepted_payments/master_0.png" alt="images">
+                                       </div>                                     
+                                   </div>
                         </div>
                     </div>
                 </div>
@@ -1171,63 +968,45 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-12 col-sm-12 footer-widget md-mb-50">
                             <div class="footer-logo mb-30">
-                                <a href="index.html"><img src="assets/images/lite-logo.png" alt=""></a>
+                                <a href=""><img style="height: 40px;" src="assets/images/updated/logo.png" alt=""><span class="text-light ml-3" style="font-size: 1.5rem; text-transform: uppercase;">Pearbrill</span></a>
                             </div>
-                              <div class="textwidget pr-60 md-pr-15"><p class="white-color">We denounce with righteous indi gnation and dislike men who are so beguiled and demoralized by the charms of pleasure of your moment, so blinded by desire those who fail weakness.</p>
+                              <div class="textwidget pr-60 md-pr-15"><p class="white-color">Brief description.. and dislike men who are so beguiled and demoralized by the charms of pleasure of your moment, so blinded by desire those who fail weakness.</p>
                               </div>
-                              <ul class="footer_social">  
-                                  <li> 
-                                      <a href="#" target="_blank"><span><i class="fa fa-facebook"></i></span></a> 
-                                  </li>
-                                  <li> 
-                                      <a href="# " target="_blank"><span><i class="fa fa-twitter"></i></span></a> 
-                                  </li>
-
-                                  <li> 
-                                      <a href="# " target="_blank"><span><i class="fa fa-pinterest-p"></i></span></a> 
-                                  </li>
-                                  <li> 
-                                      <a href="# " target="_blank"><span><i class="fa fa-google-plus-square"></i></span></a> 
-                                  </li>
-                                  <li> 
-                                      <a href="# " target="_blank"><span><i class="fa fa-instagram"></i></span></a> 
-                                  </li>
-                                                                           
-                              </ul>
                         </div>
                         <div class="col-lg-3 col-md-12 col-sm-12 footer-widget md-mb-50">
                             <h3 class="widget-title">Address</h3>
                             <ul class="address-widget">
                                 <li>
                                     <i class="flaticon-location"></i>
-                                    <div class="desc">374 William S Canning Blvd, River MA 2721, USA</div>
+                                    <div class="desc">374 William S Canning Blvd, River MA 2721, UK</div>
                                 </li>
                                 <li>
                                     <i class="flaticon-call"></i>
                                     <div class="desc">
-                                       <a href="tel:(+880)155-69569">(+880)155-69569</a>
+                                       <a href="tel:+44 7398 624184">+44 7398 624184</a>
                                     </div>
                                 </li>
                                 <li>
                                     <i class="flaticon-email"></i>
                                     <div class="desc">
-                                        <a href="mailto:support@rstheme.com">support@rstheme.com</a>
+                                        <a href="mailto:info@pallasbrill.com?Subject=My%20Query">info@pallasbrill.com</a>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                         <div class="col-lg-3 col-md-12 col-sm-12 pl-50 md-pl-15 footer-widget md-mb-50">
-                            <h3 class="widget-title">Courses</h3>
+                            <h3 class="widget-title">Pages</h3>
                             <ul class="site-map">
-                                <li><a href="#">Courses</a></li>
-                                <li><a href="#">Course Two</a></li>
-                                <li><a href="#">Single Course</a></li>
-                                <li><a href="#">Profile</a></li>
-                                <li><a href="#">Login/Register</a></li>
+                                <li><a href="#">Samples</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Tutoring</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Login</a></li>
                             </ul>
                         </div>
                         <div class="col-lg-3 col-md-12 col-sm-12 footer-widget">
-                            <h3 class="widget-title">Recent Posts</h3>
+                            <h3 class="widget-title">Recent Blogs</h3>
                             <div class="recent-post mb-20">
                                 <div class="post-img">
                                     <img src="assets/images/footer/1.jpg" alt="">
@@ -1265,12 +1044,12 @@
                     <div class="row y-middle">
                         <div class="col-lg-6 md-mb-20">
                             <div class="copyright">
-                                <p>&copy; 2020 All Rights Reserved. Developed By <a href="http://rstheme.com/">RSTheme</a></p>
+                                <p>&copy; 2023 All Rights Reserved. Developed By <a href="mailto:barasabrandon@gmail.com?Subject=My%20Query">Brandon Wanambisi</a></p>
                             </div>
                         </div>
                         <div class="col-lg-6 text-right md-text-left">
                             <ul class="copy-right-menu">
-                                <li><a href="#">Event</a></li>
+                                <li><a href="#">Samples</a></li>
                                 <li><a href="#">Blog</a></li>
                                 <li><a href="#">Contact</a></li>
                             </ul>
