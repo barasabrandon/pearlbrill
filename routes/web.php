@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,9 +18,17 @@ Route::get('/', function () {
     return view('front.welcome');
 });
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/password-reset', function () {
+    return view('auth.email');
+});
+
+Route::get('/reset-password/{token}', function () {
+    return view('auth.reset');
+});
+
+Route::get('/dashboard', function () {
+    return view('layouts.dashboard');
+});
 
 Auth::routes();
 

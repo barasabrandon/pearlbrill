@@ -1,49 +1,62 @@
 @extends('layouts.app')
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Confirm Password') }}</div>
+@section('front-content')
+<!-- Main content Start -->
+<div class="main-content">
+    <!-- Breadcrumbs Start -->
+    <div class="rs-breadcrumbs breadcrumbs-overlay">
+        <div class="breadcrumbs-img">
+            <img src="assets/images/breadcrumbs/2.jpg" alt="Breadcrumbs Image">
+        </div>
+        <div class="breadcrumbs-text white-color">
+            <h1 class="page-title">My Account</h1>
+            <ul>
+                <li>
+                    <a class="active" href="index.html">Home</a>
+                </li>
+                <li>My Account</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Breadcrumbs End -->            
 
-                <div class="card-body">
-                    {{ __('Please confirm your password before continuing.') }}
+    <!-- My Account Section Start -->
+    <div class="rs-login pt-100 pb-100 md-pt-70 md-pb-70">
+        <div class="container">
+            <div class="noticed">
+                <div class="main-part">                           
+                    <div class="method-account">
+                        <h2 class="login">Login</h2>
+                        <form method="POST" action="{{ route('login') }}">
+                            @csrf
+                            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
-                    <form method="POST" action="{{ route('password.confirm') }}">
-                        @csrf
+                            @error('email')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 
-                        <div class="row mb-3">
-                            <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
+                            @error('password')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                            
+                            <button type="submit" class="readon submit-btn">login</button>
+                            <div class="last-password">
+                                <p>Not registered? <a href="/register">Create an account</a></p>
                             </div>
-                        </div>
-
-                        <div class="row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Confirm Password') }}
-                                </button>
-
-                                @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
-                                    </a>
-                                @endif
-                            </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    <!-- My Account Section End -->  
+
+</div> 
+<!-- Main content End --> 
+    
 @endsection

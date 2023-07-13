@@ -93,10 +93,12 @@ return [
     'passwords' => [
         'users' => [
             'provider' => 'users',
+            'email' => 'auth.email',
             'table' => 'password_reset_tokens',
             'expire' => 60,
             'throttle' => 60,
-        ],
+        ]
+
     ],
 
     /*

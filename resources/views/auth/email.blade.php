@@ -26,28 +26,24 @@
             <div class="noticed">
                 <div class="main-part">                           
                     <div class="method-account">
-                        <h2 class="login">Login</h2>
-                        <form method="POST" action="{{ route('login') }}">
-                            @csrf
-                            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                        <h2 class="login">Password Reset</h2>
+                            @if (session('status'))
+                            <div class="alert alert-success" role="alert">
+                                {{ session('status') }}
+                            </div>
+                           @endif
+                        <form method="POST" action="{{ route('password.email') }}">
+                           @csrf
+                            <input id="email" placeholder="Enter Email Address" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                             @error('email')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
-                            @enderror
-                            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
-
-                            @error('password')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
+                            @enderror                           
                             
-                            <button type="submit" class="readon submit-btn">login</button>
-                            <div class="last-password">
-                                <p>Not registered? <a href="/register">Create an account</a></p>
-                            </div>
+                            <button type="submit" class="readon submit-btn">Send Password Reset Link</button>
+                        
                         </form>
                     </div>
                 </div>

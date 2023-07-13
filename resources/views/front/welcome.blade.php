@@ -64,40 +64,11 @@
                 <header id="rs-header" class="rs-header">  <!-- Topbar Area Start -->
                     <div class="topbar-area home8-topbar">
                         <div class="container">
-                            <div class="row y-middle">
-                                <div class="col-md-7">
-                                    <ul class="topbar-contact">
-                                        <li>
-                                            <i class="flaticon-email"></i>
-                                            <a href="mailto:support@rstheme.com">info@pallasbrill.com </a>
-                                        </li>
-                                        <li>
-                                            <i class="flaticon-location"></i>
-                                            Get In touch UK: +44 7398 624184
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-5 text-right">
-                                    <ul class="topbar-right">
-                                        <li class="login-register">
-                                        
-                                            <i class="fa fa-sign-in"></i><a href="login.html">Login</a>
-                                        </li>
-                                        <li class="btn-part">
-                                            <a class="apply-btn" href="#">Brandon</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                             @include('inc.topbar')
                         </div>
                     </div>
                     <!-- Topbar Area End -->
-                    {{-- <!-- Menu Start -->
-                    <div class="p-3 bg-danger text-light d-flex align-items-center justify-content-center gap-34 flex-wrap" id="announcement-container">
-                        <div class="mr-3">Get In touch UK:</div>
-                        <div class="mr-2"> +44 7398 624184 </div>
-                        <div>Email: info@pallasbrill.com or pallasbrill@gmail.com</div>
-                      </div> --}}
+                   
                     <div class="menu-area menu-sticky">
                         <div class="container">
                             <div class="row y-middle">
@@ -119,28 +90,7 @@
                                                   <i class="fa fa-bars"></i>
                                               </a>
                                           </div>
-                                          <nav class="rs-menu">
-                                             <ul class="nav-menu">
-                                                <li class="rs-mega-menu mega-rs  current-menu-item"> 
-                                                    <a href="/">Home</a>
-                                                </li>
-                                                 <li >
-                                                     <a href="#">Samples</a>
-                                                 </li>
-                                                 <li >
-                                                     <a href="#">Blog</a>
-                                                 </li>
-                                                 <li >
-                                                     <a href="#">Tutoring</a>
-                                                 </li>
-                                                 <li >
-                                                     <a href="#">About</a>
-                                                 </li>
-                                                 <li >
-                                                     <a href="#">Contact</a>
-                                                 </li>
-                                             </ul> <!-- //.nav-menu -->
-                                          </nav>                                       
+                                        @include('inc.header-component')                                     
                                       </div> <!-- //.main-menu -->
                                     
                                   </div>
@@ -962,102 +912,7 @@
         <!-- Main content End -->
      
         <!-- Footer Start -->
-        <footer id="rs-footer" class="rs-footer home9-style main-home">
-            <div class="footer-top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-12 col-sm-12 footer-widget md-mb-50">
-                            <div class="footer-logo mb-30">
-                                <a href=""><img style="height: 40px;" src="assets/images/updated/logo.png" alt=""><span class="text-light ml-3" style="font-size: 1.5rem; text-transform: uppercase;">Pearbrill</span></a>
-                            </div>
-                              <div class="textwidget pr-60 md-pr-15"><p class="white-color">Brief description.. and dislike men who are so beguiled and demoralized by the charms of pleasure of your moment, so blinded by desire those who fail weakness.</p>
-                              </div>
-                        </div>
-                        <div class="col-lg-3 col-md-12 col-sm-12 footer-widget md-mb-50">
-                            <h3 class="widget-title">Address</h3>
-                            <ul class="address-widget">
-                                <li>
-                                    <i class="flaticon-location"></i>
-                                    <div class="desc">374 William S Canning Blvd, River MA 2721, UK</div>
-                                </li>
-                                <li>
-                                    <i class="flaticon-call"></i>
-                                    <div class="desc">
-                                       <a href="tel:+44 7398 624184">+44 7398 624184</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i class="flaticon-email"></i>
-                                    <div class="desc">
-                                        <a href="mailto:info@pallasbrill.com?Subject=My%20Query">info@pallasbrill.com</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-3 col-md-12 col-sm-12 pl-50 md-pl-15 footer-widget md-mb-50">
-                            <h3 class="widget-title">Pages</h3>
-                            <ul class="site-map">
-                                <li><a href="#">Samples</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Tutoring</a></li>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">Login</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-3 col-md-12 col-sm-12 footer-widget">
-                            <h3 class="widget-title">Recent Blogs</h3>
-                            <div class="recent-post mb-20">
-                                <div class="post-img">
-                                    <img src="assets/images/footer/1.jpg" alt="">
-                                </div>
-                                <div class="post-item">
-                                    <div class="post-desc">
-                                        <a href="#">University while the lovely valley team work</a>
-                                    </div>
-                                    <span class="post-date">
-                                        <i class="fa fa-calendar"></i>
-                                        September 20, 2020
-                                    </span>
-                                </div>
-                            </div> 
-                            <div class="recent-post mb-20 md-pb-0">
-                                <div class="post-img">
-                                    <img src="assets/images/footer/2.jpg" alt="">
-                                </div>
-                                <div class="post-item">
-                                    <div class="post-desc">
-                                        <a href="#">High school program starting soon 2021</a>
-                                    </div>
-                                    <span class="post-date">
-                                       <i class="fa fa-calendar-check-o"></i>
-                                        September 14, 2020
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="container">                    
-                    <div class="row y-middle">
-                        <div class="col-lg-6 md-mb-20">
-                            <div class="copyright">
-                                <p>&copy; 2023 All Rights Reserved. Developed By <a href="mailto:barasabrandon@gmail.com?Subject=My%20Query">Brandon Wanambisi</a></p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 text-right md-text-left">
-                            <ul class="copy-right-menu">
-                                <li><a href="#">Samples</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+         @extends('inc.footer')
         <!-- Footer End -->
 
         <!-- start scrollUp  -->
