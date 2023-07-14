@@ -10,13 +10,13 @@
             <a href="#">Blog</a>
         </li>
         <li >
-            <a href="#">Tutoring</a>
+            <a href="{{route('tutoring')}}">Tutoring</a>
         </li>
         <li >
-            <a href="#">About</a>
+            <a href="{{route('about')}}">About</a>
         </li>
         <li >
-            <a href="#">Contact</a>
+            <a href="{{route('contact')}}">Contact</a>
         </li>
     </ul> <!-- //.nav-menu -->
  </nav>  
