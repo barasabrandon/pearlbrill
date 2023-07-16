@@ -1,15 +1,5 @@
 @extends('layouts.dashboard')
 
-@section('page-style')
-<style>
-    .form-txtarea {
-        height: auto;
-        min-height: 50px; /* Set a minimum height to prevent it from collapsing completely */
-        resize: vertical; /* Allow vertical resizing */
-    }
-</style>
-@endsection
-
 @section('dashboard-content')
 <div class="container-fluid">
 				
@@ -19,26 +9,27 @@
         <div class="col-xl-8 col-lg-8">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">TUTORING</h4>
+                    <h4 class="card-title text-uppercase">Our Categories</h4>
                 </div>
                 <div class="card-body">
                     <div class="basic-form">
-                        <form method="POST" action="{{ route('testmonials.update', $item->id) }}">
+                        <form method="POST" action="{{route('categories.store')}}" enctype="multipart/form-data">
                             @csrf
-                            @method('PUT')
                             <div class="mb-3">
-                                <input type="text" value="{{$item->title}}" name="title" class="form-control input-default " placeholder="eg Tutoring">
+                                <input type="text" name="title" class="form-control input-default " placeholder="Title">
                             </div>
 
                             <div class="mb-3">
-                                <textarea name="text" class="form-txtarea form-control" rows="8" id="comment">
-                                    {{ old('text', $item->text) }}
-                                </textarea>
-                            
+                                <label for="">Background Image</label>
+                                <input type="file" name="file" class="form-control input-default " placeholder="Background Image.">
+                            </div>
+
+                            <div class="mb-3">
+                                <textarea name="text" class="form-txtarea form-control" rows="8" id="comment" placeholder="Category text"></textarea>
                             </div>
 
                             <div class="mb-3 d-flex float-right">
-                                <button type="submit" class="btn btn-primary">Update</button>
+                                <button type="submit" class="btn btn-primary">Submit</button>
                             </div>
                         </form>
                     </div>

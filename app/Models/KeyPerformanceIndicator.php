@@ -10,7 +10,7 @@ class KeyPerformanceIndicator extends Model
     use HasFactory;
 
     // Table name
-    protected $table = 'testimonials';
+    protected $table = 'key_performance_indicators';
     //primary key
     public $primarykey = 'id';
 

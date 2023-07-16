@@ -9,18 +9,27 @@
         <div class="col-xl-8 col-lg-8">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">KEY PERFORMANCE INDICATOR</h4>
+                    <h4 class="card-title text-uppercase">Testmonials</h4>
                 </div>
                 <div class="card-body">
                     <div class="basic-form">
-                        <form method="POST" action="{{route('dashboard_home.store')}}">
+                        <form method="POST" action="{{route('testmonials.store')}}" enctype="multipart/form-data">
                             @csrf
                             <div class="mb-3">
-                                <input type="text" name="title" class="form-control input-default " placeholder="eg Key Performance Indicator">
+                                <input type="text" name="author_name" class="form-control input-default " placeholder="Author Name">
                             </div>
 
                             <div class="mb-3">
-                                <textarea name="text" class="form-txtarea form-control" rows="8" id="comment"></textarea>
+                                <input type="text" name="author_occupation" class="form-control input-default " placeholder="Author Occupation eg Teacher">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="">Author Image</label>
+                                <input type="file" name="file" class="form-control input-default " placeholder="Author Image.">
+                            </div>
+
+                            <div class="mb-3">
+                                <textarea name="text" class="form-txtarea form-control" rows="8" id="comment" placeholder="Testmonial text"></textarea>
                             </div>
 
                             <div class="mb-3 d-flex float-right">

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AboutUsController;
+use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\KeyPerformanceIndicatorController;
 use App\Http\Controllers\PagesController;
@@ -83,12 +84,23 @@ Route::middleware(['auth', 'role:admin'])->prefix('dashboard-home')->name('dashb
 });
 
 //HOME PAGE - TESTMONIALS
-Route::middleware(['auth', 'role:admin'])->prefix('dashboard-home')->name('testmonials.')->group(function () {
+Route::middleware(['auth', 'role:admin'])->prefix('dashboard-testmonials')->name('testmonials.')->group(function () {
     Route::get('/', [TestimonialsController::class, 'index'])->name('index');
     Route::get('/create', [TestimonialsController::class, 'create'])->name('create');
     Route::get('/{id}', [TestimonialsController::class, 'edit'])->name('edit');
     Route::post('/store', [TestimonialsController::class, 'store'])->name('store');
-    Route::put('/{id}', [TestimonialsController::class, 'update'])->name('update');
+    Route::put('/{id}', [TestimonialsController::class, 'updateTestimonial'])->name('update');
+    Route::delete('/{id}', [TestimonialsController::class, 'deleteTestimonial'])->name('delete');
+});
+
+//HOME PAGE - OUR CATEGORIES
+Route::middleware(['auth', 'role:admin'])->prefix('dashboard-categories')->name('categories.')->group(function () {
+    Route::get('/', [CategoriesController::class, 'index'])->name('index');
+    Route::get('/create', [CategoriesController::class, 'create'])->name('create');
+    Route::get('/{id}', [CategoriesController::class, 'edit'])->name('edit');
+    Route::post('/store', [CategoriesController::class, 'store'])->name('store');
+    Route::put('/{id}', [CategoriesController::class, 'updateTestimonial'])->name('update');
+    Route::delete('/{id}', [CategoriesController::class, 'deleteTestimonial'])->name('delete');
 });
 
 Auth::routes();

@@ -784,23 +784,22 @@
                             </div>
                             <span class="nav-text">Home</span>
                         </a>
-                        <li><a class="has-arrow" href="javascript:void(0);" aria-expanded="false">Users Manager<span class="badge badge-danger badge-xs ms-1">NEW</span></a>
-                            <ul aria-expanded="false">
-                                <li><a href="./user.html">User</a></li>
-                                <li><a href="./edit-profile.html">Add User</a></li>
-                                <li><a href="./app-profile-1.html">Profile 1</a></li>
-                                <li><a href="./app-profile-2.html">Profile 2 <span class="badge badge-danger badge-xs ms-1">NEW</span></a></li>
-                                <li><a href="./edit-profile.html">Edit Profile</a></li>
-                                <li><a href="./post-details.html">Post Details</a></li>
-                            </ul>
-                        </li>
+                       
                         <ul aria-expanded="false">
                             <li><a href="{{ route('dashboard_home.create')}}">Performance Indicator</a></li>
-                            <li><a href="./chart-morris.html">Morris</a></li>
-                            <li><a href="./chart-chartjs.html">Chartjs</a></li>
-                            <li><a href="./chart-chartist.html">Chartist</a></li>
-                            <li><a href="./chart-sparkline.html">Sparkline</a></li>
-                            <li><a href="./chart-peity.html">Peity</a></li>
+                            <li><a class="has-arrow" href="javascript:void(0);" aria-expanded="false">Testmonials</a>
+                                <ul aria-expanded="false">
+                                    <li><a href="{{ route('testmonials.index')}}">Table</a></li>
+                                    <li><a href="{{ route('testmonials.create')}}">Add</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a class="has-arrow" href="javascript:void(0);" aria-expanded="false">Our Categories</a>
+                                <ul aria-expanded="false">
+                                    <li><a href="{{ route('testmonials.index')}}">Table</a></li>
+                                    <li><a href="{{ route('categories.create')}}">Add</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                     <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">

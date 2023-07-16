@@ -296,66 +296,24 @@
                         <h2 class="title black-color">All Categories</h2>
                     </div>
                     <div class="row mb-35">
-                        <div class="col-lg-4 col-md-6 mb-30">
-                            <div class="categories-items">
-                                <div class="cate-images">
-                                    <a href="#"><img src="assets/images/categories/main-home/1.jpg" alt=""></a>
-                                </div>
-                                <div class="contents">
-                                    {{-- <div class="img-part">
-                                        <img src="assets/images/categories/main-home/icon/1.png" alt="">
-                                    </div> --}}
-                                    <div class="content-wrap">
-                                        <h2 class="title"><a href="#">CIPD Course Levels</a></h2>
-                                        <span class="course-qnty">Pallasbrill helps you get through the three CIPD levels (3,5, and 7). At the Foundation, Intermediate, and Advanced levels, Pallasbrill walks with you and ensures you get the right status.</span>
+                        @foreach ($categories as $item)
+                            <div class="col-lg-4 col-md-6 mb-30">
+                                <div class="categories-items">
+                                    <div class="cate-images">
+                                        <a href="#"><img src="uploads/our_categories/{{$item->img_url}}" alt=""></a>
+                                    </div>
+                                    <div class="contents">
+                                        <div class="content-wrap">
+                                            <h2 class="title"><a href="#">{{$item->title}}</a></h2>
+                                            <span class="course-qnty">
+                                                {{$item->text}}
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>  
-                  
-                        <div class="col-lg-4 col-md-6 mb-30">
-                            <div class="categories-items">
-                                <div class="cate-images">
-                                    <a href="#"><img src="assets/images/categories/main-home/5.jpg" alt=""></a>
-                                </div>
-                                <div class="contents">
-                                    <div class="content-wrap">
-                                        <h2 class="title"><a href="#">Reports</a></h2>
-                                        <span class="course-qnty">Getting the right certification by CIPD requires the completion of various reports, including HRC, PRM, and LMS. Pallasbrill helps you to develop quality reports that exceed expectations.</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>  
-          
-                        <div class="col-lg-4 col-md-6 mb-30">
-                            <div class="categories-items">
-                                <div class="cate-images">
-                                    <a href="#"><img src="assets/images/categories/main-home/3.jpg" alt=""></a>
-                                </div>
-                                <div class="contents">
-                                    <div class="content-wrap">
-                                        <h2 class="title"><a href="#">presentations</a></h2>
-                                        <span class="course-qnty">CIPD learning process requires the development of various presentations about various topics. Pallasbrill works with everyone to ensure an interactive and appealing presentation.
-
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 mb-30">
-                            <div class="categories-items">
-                                <div class="cate-images">
-                                    <a href="#"><img src="assets/images/categories/main-home/6.jpg" alt=""></a>
-                                </div>
-                                <div class="contents">
-                                    <div class="content-wrap">
-                                        <h2 class="title"><a href="#">CPD and Reflection</a></h2>
-                                        <span class="course-qnty">Growth and development in CIPD involve reflection on the course content and experience and is a continuous process. Pallasbrill helps you develop smart goals and continuously update your CPD to achieve the milestones. </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                            </div> 
+                        @endforeach                   
+                    
                     </div>
                 </div>
             </div>
@@ -682,78 +640,22 @@
                         data-mobile-device="1" 
                         data-mobile-device-nav="false" 
                         data-mobile-device-dots="false">
-                        <div class="testi-item">
-                            <div class="author-desc">                                
-                                <div class="desc"><img class="quote" src="assets/images/testimonial/main-home/test-2.png" alt="">Professional, responsive, and able to keep up with ever-changing demand and tight deadlines: That’s how I would describe Jeramy and his team at The Lorem Ipsum Company. When it comes to content marketing, you’ll definitely get the 5-star treatment from the Lorem Ipsum Company.</div>
-                                <div class="author-img">
-                                    <img src="assets/images/testimonial/style5/1.png" alt="">
-                                </div>
-                            </div>
-                            <div class="author-part">
-                                <a class="name" href="#">Mahadi Monsura</a>
-                                <span class="designation">Student</span>
-                            </div>
-                        </div>
+                        @foreach ($testmonials as $item)
                         <div class="testi-item">
                             <div class="author-desc">
-                                <div class="desc"><img class="quote" src="assets/images/testimonial/main-home/test-2.png" alt="">Professional, responsive, and able to keep up with ever-changing demand and tight deadlines: That’s how I would describe Jeramy and his team at The Lorem Ipsum Company. When it comes to content marketing, you’ll definitely get the 5-star treatment from the Lorem Ipsum Company.</div>
+                                <div class="desc"><img class="quote" src="assets/images/testimonial/main-home/test-2.png" alt="">
+                                {{$item->text}}
+                                </div>
                                 <div class="author-img">
                                     <img src="assets/images/testimonial/style5/2.png" alt="">
                                 </div>
                             </div>
                             <div class="author-part">
-                                <a class="name" href="#">Alex Fenando</a>
-                                <span class="designation">English Teacher</span>
-                            </div>
-                        </div>
-                        <div class="testi-item">
-                            <div class="author-desc">
-                                <div class="desc"><img class="quote" src="assets/images/testimonial/main-home/test-2.png" alt="">Professional, responsive, and able to keep up with ever-changing demand and tight deadlines: That’s how I would describe Jeramy and his team at The Lorem Ipsum Company. When it comes to content marketing, you’ll definitely get the 5-star treatment from the Lorem Ipsum Company.</div>
-                                <div class="author-img">
-                                    <img src="assets/images/testimonial/style5/3.png" alt="">
-                                </div>
-                            </div>
-                            <div class="author-part">
-                                <a class="name" href="#">Losis Dcosta</a>
-                                <span class="designation">Math Teacher</span>
+                                <a class="name" href="#">{{$item->author_name}}</a>
+                                <span class="designation">{{$item->author_occupation}}</span>
                             </div>
                         </div>   
-                        <div class="testi-item">
-                            <div class="author-desc">                                
-                                <div class="desc"><img class="quote" src="assets/images/testimonial/main-home/test-2.png" alt="">Professional, responsive, and able to keep up with ever-changing demand and tight deadlines: That’s how I would describe Jeramy and his team at The Lorem Ipsum Company. When it comes to content marketing, you’ll definitely get the 5-star treatment from the Lorem Ipsum Company.</div>
-                                <div class="author-img">
-                                    <img src="assets/images/testimonial/style5/1.png" alt="">
-                                </div>
-                            </div>
-                            <div class="author-part">
-                                <a class="name" href="#">Mahadi Monsura</a>
-                                <span class="designation">Student</span>
-                            </div>
-                        </div>
-                        <div class="testi-item">
-                            <div class="author-desc">
-                                <div class="desc"><img class="quote" src="assets/images/testimonial/main-home/test-2.png" alt="">Professional, responsive, and able to keep up with ever-changing demand and tight deadlines: That’s how I would describe Jeramy and his team at The Lorem Ipsum Company. When it comes to content marketing, you’ll definitely get the 5-star treatment from the Lorem Ipsum Company.</div>
-                                <div class="author-img">
-                                    <img src="assets/images/testimonial/style5/2.png" alt="">
-                                </div>
-                            </div>
-                            <div class="author-part">
-                                <a class="name" href="#">Alex Fenando</a>
-                                <span class="designation">English Teacher</span>
-                            </div>
-                        </div>
-                        <div class="testi-item">
-                            <div class="author-desc">
-                                <div class="desc"><img class="quote" src="assets/images/testimonial/main-home/test-2.png" alt="">Professional, responsive, and able to keep up with ever-changing demand and tight deadlines: That’s how I would describe Jeramy and his team at The Lorem Ipsum Company. When it comes to content marketing, you’ll definitely get the 5-star treatment from the Lorem Ipsum Company.</div>
-                                <div class="author-img">
-                                    <img src="assets/images/testimonial/style5/3.png" alt="">
-                                </div>
-                            </div>
-                            <div class="author-part">
-                                <a class="name" href="#">Losis Dcosta</a>
-                                <span class="designation">Math Teacher</span>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
