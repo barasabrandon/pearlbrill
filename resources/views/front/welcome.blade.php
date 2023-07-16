@@ -285,6 +285,9 @@
             </div>
             <!-- Slider Section End -->  
 
+            <div class="m-4">
+                @include('inc.messages')
+            </div>
             <!-- Categories Section Start -->
             <div id="rs-categories" class="rs-categories main-home pt-90 pb-10 md-pt-60 md-pb-10">
                 <div class="container">
@@ -624,14 +627,17 @@
                             <div class="offset-lg-6"></div>
                             <div class="col-lg-6 pl-70 md-pl-15">
                                 <div class="sec-title3 mb-40">
-                                    <h2 class="title white-color mb-16">Key Performance Indicator</h2>
-                                    <div class="desc white-color pr-100 md-pr-0">Get access to quality and wide tutoring materials and services to meet your HR growth and development needs. 
-
-                                        Guaranteed 100% free from plagiarism and high-quality services. 
-                                        
-                                        Timely delivery and 24/7 support availability. 
-                                        
-                                        High ROI on your investment in Pallasbrill tutoring and learning services.</div>
+                                    <h2 class="title white-color mb-16">
+                                        {{$performance_indicator->title}} 
+                                       
+                                    </h2>
+                                    <div class="desc white-color pr-100 md-pr-0">
+                                        {{$performance_indicator->text}}
+                                        @role('admin')
+                                        <a href="{{ route('dashboard_home.edit', $performance_indicator->id) }}" class="btn btn-primary">Edit</a>
+                                         
+                                        @endrole
+                                    </div>
                                 </div>
                             </div>
                         </div>

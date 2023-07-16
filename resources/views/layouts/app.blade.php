@@ -37,6 +37,7 @@
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        @livewireStyles
 
     </head>
     <body class="defult-home">
@@ -212,6 +213,7 @@
         <!--Full width header End-->
 
 		<!-- Main content Start -->
+        @include('inc.messages')
         @yield('front-content') 
         <!-- Main content End --> 
 
@@ -264,5 +266,6 @@
         <script src="assets/js/contact.form.js"></script>
         <!-- main js -->
         <script src="assets/js/main.js"></script>
+        @livewireScripts
     </body>
 </html>

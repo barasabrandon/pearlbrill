@@ -43,4 +43,17 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    // Assign Roles
+    public function assignAdminRole()
+{
+    $adminEmails = ['barasabrandon@gmail.com', 'domkaris@gmail.com'];
+
+    if (in_array($this->email, $adminEmails)) {
+        $this->assignRole('admin');
+    } else {
+        $this->assignRole('user');
+    }
+}
+
 }

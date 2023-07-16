@@ -62,34 +62,36 @@
                     <div class="inner-part text-center mb-50">
                         <h2 class="title mb-15">Send A Message</h2>
                     </div>
-                    <div id="form-messages"></div>
-                    <form id="contact-form" method="post" action="mailer.php">
+                    <form method="POST" action="{{route('contactus.store')}}">
+                        @csrf
                         <div class="row">
                             <div class="col-lg-6 mb-35 col-md-12">
                                 <input class="from-control" type="text" id="name" name="name" placeholder="Name"
-                                    required="">
+                                    required=""/>
                             </div>
                             <div class="col-lg-6 mb-35 col-md-12">
                                 <input class="from-control" type="text" id="email" name="email" placeholder="Email"
-                                    required="">
+                                    required="" />
                             </div>
                             <div class="col-lg-6 mb-35 col-md-12">
                                 <input class="from-control" type="text" id="phone" name="phone" placeholder="Phone"
-                                    required="">
+                                    required=""/>
                             </div>
                             <div class="col-lg-6 mb-35 col-md-12">
-                                <input class="from-control" type="text" id="subject" name="subject"
-                                    placeholder="Subject" required="">
+                                <input class="from-control" type="text" id="subject" name="title"
+                                    placeholder="Subject" required="" />
                             </div>
-
+                    
                             <div class="col-lg-12 mb-50">
-                                <textarea class="from-control" id="message" name="message" placeholder=" Message" required=""></textarea>
+                                <textarea class="from-control" id="message" name="message" placeholder=" Message" required></textarea>
                             </div>
                         </div>
+                       
                         <div class="form-group mb-0">
                             <input class="btn-send" type="submit" value="Submit Now">
                         </div>
                     </form>
+                    
                 </div>
             </div>
         </div>

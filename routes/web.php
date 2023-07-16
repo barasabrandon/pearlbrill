@@ -1,6 +1,13 @@
 <?php
 
+use App\Http\Controllers\AboutUsController;
+use App\Http\Controllers\ContactUsController;
+use App\Http\Controllers\KeyPerformanceIndicatorController;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\TutorialController;
+use App\Http\Controllers\UsersController;
+use App\Models\ContactUs;
+use App\Models\TestimonialsController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -15,9 +22,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 //Pages
-Route::get('/', function () {
-    return view('front.welcome');
-});
+
+Route::get('/', [PagesController::class, 'home'])->name('home.page');
 
 Route::get('/password-reset', function () {
     return view('auth.email');
@@ -28,30 +34,62 @@ Route::get('/reset-password/{token}', function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('layouts.dashboard');
+    return view('dashboard.index');
 });
 
 //CONTACT
 Route::get('/contact-us',[PagesController::class, 'contactIndex'])->name('contact');
-Route::middleware(['auth', 'role:admin'])->name('contact.')->prefix('contact')->group(function () { 
-    // Route::get('/total-day-income', [DailyIncomeController::class, 'web'])->name('total.day.income');    
-     
+Route::post('/contact-us',[ContactUsController::class, 'store'])->name('contactus.store');
+Route::middleware(['auth', 'role:admin'])->prefix('contacts')->name('contacts.')->group(function () {
+    Route::get('/', [ContactUsController::class, 'getContacts'])->name('index');
+    Route::get('/item', [ContactUsController::class, 'getContactItem'])->name('item');
 });
 
 //ABOUT US
 Route::get('/about-us',[PagesController::class, 'about'])->name('about');
-Route::middleware(['auth', 'role:admin'])->name('about.')->prefix('about')->group(function () { 
-    // Route::get('/total-day-income', [DailyIncomeController::class, 'web'])->name('total.day.income');    
-     
+Route::middleware(['auth', 'role:admin'])->prefix('about')->name('about.')->group(function () {
+    Route::get('/', [AboutUsController::class, 'create'])->name('create');
+    Route::post('/store', [AboutUsController::class, 'store'])->name('store');
+    Route::get('/{id}', [AboutUsController::class, 'edit'])->name('edit');
+    Route::put('/{id}', [AboutUsController::class, 'update'])->name('update');
 });
 
-//Tutoring
+// TUTORING
 Route::get('/tutoring',[PagesController::class, 'tutoring'])->name('tutoring');
-Route::middleware(['auth', 'role:admin'])->name('tutoring.')->prefix('contact')->group(function () { 
-    // Route::get('/total-day-income', [DailyIncomeController::class, 'web'])->name('total.day.income');    
-     
+Route::middleware(['auth', 'role:admin'])->prefix('tutorial')->name('tutoring.')->group(function () {
+    Route::get('/', [TutorialController::class, 'create'])->name('create');
+    Route::get('/{id}', [TutorialController::class, 'edit'])->name('edit');
+    Route::post('/store', [TutorialController::class, 'store'])->name('store');
+    Route::put('/{id}', [TutorialController::class, 'update'])->name('update');
 });
 
+//CREATING $roleNames
+Route::get('/create-role',[UsersController::class, 'createRole'])->name('create.role');
+Route::get('/assign-role',[UsersController::class, 'assignRole'])->name('assign.role');
+
+
+//USER ROUTES
+Route::middleware(['auth', 'role:admin'])->prefix('users')->name('users.')->group(function () {
+    Route::get('/', [UsersController::class, 'getUsers'])->name('index');
+    Route::get('/user/{id}', [UsersController::class, 'deleteUser'])->name('destroy');
+});
+
+//HOME PAGE - KEY PERFORMANCE INDICATOR
+Route::middleware(['auth', 'role:admin'])->prefix('dashboard-home')->name('dashboard_home.')->group(function () {
+    Route::get('/', [KeyPerformanceIndicatorController::class, 'create'])->name('create');
+    Route::get('/{id}', [KeyPerformanceIndicatorController::class, 'edit'])->name('edit');
+    Route::post('/store', [KeyPerformanceIndicatorController::class, 'store'])->name('store');
+    Route::put('/{id}', [KeyPerformanceIndicatorController::class, 'update'])->name('update');
+});
+
+//HOME PAGE - TESTMONIALS
+Route::middleware(['auth', 'role:admin'])->prefix('dashboard-home')->name('testmonials.')->group(function () {
+    Route::get('/', [TestimonialsController::class, 'index'])->name('index');
+    Route::get('/create', [TestimonialsController::class, 'create'])->name('create');
+    Route::get('/{id}', [TestimonialsController::class, 'edit'])->name('edit');
+    Route::post('/store', [TestimonialsController::class, 'store'])->name('store');
+    Route::put('/{id}', [TestimonialsController::class, 'update'])->name('update');
+});
 
 Auth::routes();
 
