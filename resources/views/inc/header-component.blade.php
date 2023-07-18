@@ -4,10 +4,10 @@
            <a href="/">Home</a>
        </li>
         <li >
-            <a href="#">Samples</a>
+            <a href="{{route('samples')}}">Samples</a>
         </li>
         <li >
-            <a href="#">Blog</a>
+            <a href="{{route('blogs')}}">Blogs</a>
         </li>
         <li >
             <a href="{{route('tutoring')}}">Tutoring</a>

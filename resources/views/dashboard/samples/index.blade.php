@@ -14,7 +14,7 @@
                         <div class="card dz-card" id="accordion-one">
                             <div class="card-header flex-wrap">
                                 <div>
-                                    <h4 class="card-title text-uppercase">Users Datatable</h4>
+                                    <h4 class="card-title text-uppercase">Samples table</h4>
                                 </div>
                             </div>
                             <!--tab-content-->
@@ -27,31 +27,37 @@
                                                 style="min-width: 845px">
                                                 <thead>
                                                     <tr>
-                                                        <th>Name</th>
-                                                        <th>Email</th>
-                                                        <th>Reg date</th>
+                                                        <th>Title</th>
+                                                        <th>Created At</th>
+                                                        <th>Edit</th>
                                                         <th>Delete</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                   @foreach ($users as $user)
-                                                    <tr>
-                                                        <td>{{$user->name}}</td>
-                                                        <td>{{$user->email}}</td>
-                                                        <td>{{$user->updated_at}}</td>
-                                                        <td><a class="btn btn-danger" href="{{ route('users.destroy', $user->id) }}"
-                                                            >Delete</a></td>
-                                                    </tr>                                                       
-                                                   @endforeach
+                                                   @foreach ($samples as $item)
+                                                   <tr>
+                                                    <td>{{$item->title}}</td>
+                                                    <td>{{$item->updated_at}}</td>
+                                                    <td>
+                                                        <a href="{{ route('dashboard.samples.edit', $item->id)}}" class="btn btn-primary">Edit</a>
+                                                      
+                                                    </td>
+                                                    <td>
+                                                        <form method="POST" action="{{ route('dashboard.samples.delete',  $item->id) }}">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <button class="btn btn-danger" type="submit">Delete</button>
+                                                      </form>
+                                                </td>
+                                                </tr>
+                                                   @endforeach                                                  
+                                            
                                                 </tbody>
-                                                <tfoot>
-                                                    <tr>
-                                                        <th>Name</th>
-                                                        <th>Email</th>
-                                                        <th>Role</th>
-                                                        <th>Reg date</th>
-                                                        <th>Delete</th>
-                                                    </tr>
+                                                <tfoot>               
+                                                    <th>Title</th>
+                                                    <th>Created At</th>
+                                                    <th>Edit</th>
+                                                    <th>Delete</th>
                                                 </tfoot>
                                             </table>
                                         </div>
@@ -75,20 +81,7 @@
 
             </div>
         </div>
-        <div class="demo-right ">
-            <div class="demo-right-inner" id="right-sidebar">
-                <h4 class="title">DataTables</h4>
-                <div class="dz-scroll demo-right-tabs" id="rightSidebarScroll">
-                    <ul class="navbar-nav nav" id="menu-bar">
-                        <li><a href="#accordion-one" class="scroll ">Users</a></li>
-                        <li><a href="#accordion-two" class="scroll ">Contacts</a></li>
-                        <li><a href="#accordion-three" class="scroll ">Blog</a></li>
-                        <li><a href="#accordion-four" class="scroll ">Samples</a></li>
-
-                    </ul>
-                </div>
-            </div>
-        </div>
+        @include('inc.datatables-links')
     </div>
 </div>
 

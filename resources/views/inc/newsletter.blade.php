@@ -7,16 +7,16 @@
                        </div>
                        <div style="display: flex; align-items: center; justify-content: space-between;" >
                            <div>
-                               <img style="height: 40px;" src="assets/images/updated/accepted_payments/paypal_0.png" alt="images">
+                               <img style="height: 40px;" src="{{ asset('assets/images/updated/accepted_payments/paypal_0.png')}}" alt="images">
                            </div>                                     
                            <div>
-                               <img style="height: 40px;" src="assets/images/updated/accepted_payments/visa_1.png" alt="images">
+                               <img style="height: 40px;" src="{{ asset('assets/images/updated/accepted_payments/visa_1.png')}}" alt="images">
                            </div>                                     
                            <div>
-                               <img style="height: 40px;" src="assets/images/updated/accepted_payments/western_0.png" alt="images">
+                               <img style="height: 40px;" src="{{ asset('assets/images/updated/accepted_payments/western_0.png')}}" alt="images">
                            </div>                                     
                            <div>
-                               <img style="height: 40px;" src="assets/images/updated/accepted_payments/master_0.png" alt="images">
+                               <img style="height: 40px;" src="{{ asset('assets/images/updated/accepted_payments/master_0.png')}}" alt="images">
                            </div>                                     
                        </div>
             </div>

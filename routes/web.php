@@ -1,10 +1,12 @@
 <?php
 
 use App\Http\Controllers\AboutUsController;
+use App\Http\Controllers\BlogsController;
 use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\KeyPerformanceIndicatorController;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\SamplesController;
 use App\Http\Controllers\TutorialController;
 use App\Http\Controllers\UsersController;
 use App\Models\ContactUs;
@@ -102,6 +104,32 @@ Route::middleware(['auth', 'role:admin'])->prefix('dashboard-categories')->name(
     Route::put('/{id}', [CategoriesController::class, 'updateTestimonial'])->name('update');
     Route::delete('/{id}', [CategoriesController::class, 'deleteTestimonial'])->name('delete');
 });
+
+// BLOG
+Route::get('/blogs',[PagesController::class, 'blogs'])->name('blogs');
+Route::get('/blogs/{id}',[PagesController::class, 'blog'])->name('blog');
+Route::middleware(['auth', 'role:admin'])->prefix('dashboard-blogs')->name('dashboard.blogs.')->group(function () {
+    Route::get('/', [BlogsController::class, 'index'])->name('index');
+    Route::get('/create', [BlogsController::class, 'create'])->name('create');
+    Route::post('/store', [BlogsController::class, 'store'])->name('store');
+    Route::get('/{id}', [BlogsController::class, 'edit'])->name('edit');
+    Route::put('/{id}', [BlogsController::class, 'update'])->name('update');
+    Route::delete('/{id}', [BlogsController::class, 'delete'])->name('delete');
+});
+
+// SAMPLES
+Route::get('/samples',[PagesController::class, 'samples'])->name('samples');
+Route::get('/samples/{id}',[PagesController::class, 'sample'])->name('sample');
+Route::middleware(['auth', 'role:admin'])->prefix('dashboard-samples')->name('dashboard.samples.')->group(function () {
+    Route::get('/', [SamplesController::class, 'index'])->name('index');
+    Route::get('/create', [SamplesController::class, 'create'])->name('create');
+    Route::post('/store', [SamplesController::class, 'store'])->name('store');
+    Route::get('/{id}', [SamplesController::class, 'edit'])->name('edit');
+    Route::put('/{id}', [SamplesController::class, 'update'])->name('update');
+    Route::delete('/{id}', [SamplesController::class, 'delete'])->name('delete');
+});
+
+
 
 Auth::routes();
 

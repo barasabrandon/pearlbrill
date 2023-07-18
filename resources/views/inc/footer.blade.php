@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-12 col-sm-12 footer-widget md-mb-50">
                     <div class="footer-logo mb-30">
-                        <a href=""><img style="height: 40px;" src="assets/images/updated/logo.png" alt=""><span class="text-light ml-3" style="font-size: 1.5rem; text-transform: uppercase;">Pearbrill</span></a>
+                        <a href=""><img style="height: 40px;" src="{{ asset('/assets/images/updated/logo.png')}}" alt=""><span class="text-light ml-3" style="font-size: 1.5rem; text-transform: uppercase;">Pearbrill</span></a>
                     </div>
                       <div class="textwidget pr-60 md-pr-15"><p class="white-color">Brief description.. and dislike men who are so beguiled and demoralized by the charms of pleasure of your moment, so blinded by desire those who fail weakness.</p>
                       </div>
@@ -46,7 +46,7 @@
                     <h3 class="widget-title">Recent Blogs</h3>
                     <div class="recent-post mb-20">
                         <div class="post-img">
-                            <img src="assets/images/footer/1.jpg" alt="">
+                            <img src="{{ asset('/assets/images/footer/1.jpg')}}" alt="">
                         </div>
                         <div class="post-item">
                             <div class="post-desc">
@@ -60,7 +60,7 @@
                     </div> 
                     <div class="recent-post mb-20 md-pb-0">
                         <div class="post-img">
-                            <img src="assets/images/footer/2.jpg" alt="">
+                            <img src="{{ asset('/assets/images/footer/2.jpg')}}" alt="">
                         </div>
                         <div class="post-item">
                             <div class="post-desc">
