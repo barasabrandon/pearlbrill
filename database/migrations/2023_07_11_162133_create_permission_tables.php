@@ -26,7 +26,7 @@ class CreatePermissionTables extends Migration
         }
 
         Schema::create($tableNames['permissions'], function (Blueprint $table) {
-            \Illuminate\Support\Facades\DB::statement('SET SESSION sql_require_primary_key=0');
+            // \Illuminate\Support\Facades\DB::statement('SET SESSION sql_require_primary_key=0');
             $table->bigIncrements('id'); // permission id
             $table->string('name');       // For MySQL 8.0 use string('name', 125);
             $table->string('guard_name'); // For MySQL 8.0 use string('guard_name', 125);
