@@ -796,7 +796,7 @@
 
                             <li><a class="has-arrow" href="javascript:void(0);" aria-expanded="false">Our Categories</a>
                                 <ul aria-expanded="false">
-                                    <li><a href="{{ route('testmonials.index')}}">Table</a></li>
+                                    <li><a href="{{ route('categories.index')}}">Table</a></li>
                                     <li><a href="{{ route('categories.create')}}">Add</a></li>
                                 </ul>
                             </li>

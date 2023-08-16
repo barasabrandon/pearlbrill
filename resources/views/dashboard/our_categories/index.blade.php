@@ -14,7 +14,7 @@
                         <div class="card dz-card" id="accordion-one">
                             <div class="card-header flex-wrap">
                                 <div>
-                                    <h4 class="card-title text-uppercase">Testimonials table</h4>
+                                    <h4 class="card-title text-uppercase">Categories table</h4>
                                 </div>
                             </div>
                             <!--tab-content-->

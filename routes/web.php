@@ -7,10 +7,9 @@ use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\KeyPerformanceIndicatorController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\SamplesController;
+use App\Http\Controllers\TestimonialController;
 use App\Http\Controllers\TutorialController;
 use App\Http\Controllers\UsersController;
-use App\Models\ContactUs;
-use App\Models\TestimonialsController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -87,12 +86,12 @@ Route::middleware(['auth', 'role:admin'])->prefix('dashboard-home')->name('dashb
 
 //HOME PAGE - TESTMONIALS
 Route::middleware(['auth', 'role:admin'])->prefix('dashboard-testmonials')->name('testmonials.')->group(function () {
-    Route::get('/', [TestimonialsController::class, 'index'])->name('index');
-    Route::get('/create', [TestimonialsController::class, 'create'])->name('create');
-    Route::get('/{id}', [TestimonialsController::class, 'edit'])->name('edit');
-    Route::post('/store', [TestimonialsController::class, 'store'])->name('store');
-    Route::put('/{id}', [TestimonialsController::class, 'updateTestimonial'])->name('update');
-    Route::delete('/{id}', [TestimonialsController::class, 'deleteTestimonial'])->name('delete');
+    Route::get('/', [TestimonialController::class, 'index'])->name('index');
+    Route::get('/create', [TestimonialController::class, 'create'])->name('create');
+    Route::get('/{id}', [TestimonialController::class, 'edit'])->name('edit');
+    Route::post('/store', [TestimonialController::class, 'store'])->name('store');
+    Route::put('/{id}', [TestimonialController::class, 'updateTestimonial'])->name('update');
+    Route::delete('/{id}', [TestimonialController::class, 'deleteTestimonial'])->name('delete');
 });
 
 //HOME PAGE - OUR CATEGORIES

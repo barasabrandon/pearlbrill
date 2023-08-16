@@ -16,11 +16,8 @@
         @guest
             @if (Route::has('login'))
                 <ul class="topbar-right">
-                    <li class="login-register">
-                        <i class="fa fa-sign-in"></i><a href="/login">Login</a>
-                    </li>
                     <li class="btn-part">
-                        <a class="apply-btn" href="/login">Brandon</a>
+                        <a class="apply-btn" href="/login">Dashboard</a>
                     </li>
                 </ul>
             @endif

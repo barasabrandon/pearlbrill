@@ -2,15 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Samples;
 use App\Models\Testimonials;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Validator;
 
-
-class TestimonialsController extends Controller
+class TestimonialController extends Controller
 {
-
     public function index()
     {
         $testimonials = Testimonials::orderBy('updated_at', 'desc')->get();
